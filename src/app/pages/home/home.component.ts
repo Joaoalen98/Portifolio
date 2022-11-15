@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
     fetch(this.urlRepo)
       .then(res => res.json())
       .then((res: IRepositorio[]) => {
-        this.repositorios = res;
+        this.repositorios = res.filter(rep => rep.name !== "Joaoalen98");
       })
       .catch(err => console.log(err));
   }
