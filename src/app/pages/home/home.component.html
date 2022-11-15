@@ -1,0 +1,67 @@
+<section class="home">
+    <article class="sobre">
+        <h2 class="sobre-titulo">João Alencar</h2>
+
+        <div class="sobre-detalhes">
+            <img src="../../../assets/images/imagem-perfil.jpeg" class="imagem-perfil" alt="imagem perfil" />
+
+            <div class="sobre-detalhes-descricao">
+                <ul class="detalhes-lista">
+                    <li class="detalhes-lista-item">
+                        Cursando Análise e Desenvolvimento de Sistemas (2/5 semestre), na Faculdade Impacta;
+                    </li>
+                    <li class="detalhes-lista-item">
+                        Estudando C#: ASP.NET CORE (WepApi, Mvc), Windows Forms, Blazor, Entity Framework;
+                    </li>
+                    <li class="detalhes-lista-item">
+                        Interesse em: HTML, CSS Javascript/Typescript, Angular e Flutter;
+                    </li>
+                    <li class="detalhes-lista-item lista-item-contatos">
+                        <a class="lista-item-contato" href="https://www.linkedin.com/in/jo%C3%A3o-a-a6588b129/"
+                            target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a class="lista-item-contato" href="https://github.com/Joaoalen98" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a class="lista-item-contato" href="mailto:joao.alencar1497@gmail.com" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
+
+    <article class="skills">
+        <h2>Minhas Skills</h2>
+
+        <div class="skills-container">
+            <img class="skill-icone"
+                src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/html5/html5-plain.svg"
+                alt="">
+            <img class="skill-icone"
+                src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/css3/css3-plain.svg"
+                alt="">
+            <img class="skill-icone"
+                src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-plain.svg"
+                alt="">
+            <img class="skill-icone"
+                src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/csharp/csharp-plain.svg"
+                alt="">
+        </div>
+    </article>
+
+    <article class="projetos">
+        <h2>Projetos</h2>
+
+        <div class="projetos-container">
+            <article *ngFor="let repositorio of repositorios" class="projeto">
+                <a class="projeto-link" href="{{ repositorio.html_url }}" target="_blank">
+                    <h3 class="titulo-projeto">{{ repositorio.name }}</h3>
+                    <p>{{ repositorio.description }}</p>
+                </a>
+            </article>
+        </div>
+    </article>
+</section>
