@@ -62,6 +62,31 @@
     .projetos {
         padding: 20px 0;
 
+        .projetos-titulo {
+            margin-bottom: 20px;
+        }
+
+        .carregando-container {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .icone-carregando {
+            font-size: 30px;
+            animation: spin 1s infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(360deg);
+            }
+            to {
+                transform: rotate(0deg);
+            }
+        }
+
         .projetos-container {
 
             .projeto {

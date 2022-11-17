@@ -53,7 +53,11 @@
     </article>
 
     <article class="projetos">
-        <h2>Projetos</h2>
+        <h2 class="projetos-titulo">Projetos</h2>
+        <div *ngIf="repositorios == null" class="carregando-container">
+            <p>Carregando...</p>
+            <i class="fa-solid fa-spinner icone-carregando"></i>
+        </div>
 
         <div class="projetos-container">
             <article *ngFor="let repositorio of repositorios" class="projeto">

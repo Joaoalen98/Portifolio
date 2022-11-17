@@ -1,5 +1,5 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-import { GithubServices } from 'src/app/services/github-services';
+import { GithubService } from 'src/app/services/github.service';
 import { IRepositorio } from 'src/interfaces/IRepositorio';
 
 @Component({
@@ -11,9 +11,9 @@ import { IRepositorio } from 'src/interfaces/IRepositorio';
 @Injectable()
 export class HomeComponent implements OnInit {
 
-  constructor(private githubServices: GithubServices) { }
+  constructor(private githubServices: GithubService) { }
 
-  public repositorios: IRepositorio[] = [];
+  public repositorios!: IRepositorio[];
 
   ngOnInit(): void {
     this.githubServices.getRepos()
