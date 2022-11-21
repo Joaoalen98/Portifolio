@@ -1,5 +1,5 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-import { GithubService } from 'src/app/services/github.service';
+import { GithubService } from 'src/app/services/github-service/github.service';
 import { IRepositorio } from 'src/interfaces/IRepositorio';
 
 @Component({
