@@ -4,16 +4,30 @@
     --cinza-escuro-3: #21262d;
     --branco-1: #c9d1d9;
     color: var(--branco-1);
+    font-size: 1rem;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-html,body {
+html,
+body {
     height: 100%;
     background-color: var(--cinza-escuro-2);
+}
+
+@media (max-width: 720px) {
+    :root {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 520px) {
+    :root {
+        font-size: 0.7rem;
+    }
 }

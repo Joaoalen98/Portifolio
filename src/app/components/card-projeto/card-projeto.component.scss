@@ -1,0 +1,61 @@
+.projeto {
+    border-radius: 20px;
+    background-color: var(--cinza-escuro-1);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: var(--branco-1);
+    text-decoration: none;
+    border-radius: 20px;
+
+    @media (max-width: 500px) {
+        padding: 20px 10px;
+    }
+
+    .titulo-projeto {
+        margin-bottom: 20px;
+    }
+
+    .projeto-descricao {
+        padding: 20px 10px;
+        background-color: var(--cinza-escuro-3);
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    .projeto-linguagem-container {
+        padding: 10px 0;
+
+        .icone-linguagem {
+            display: inline;
+            border: 1px solid var(--branco-1);
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--branco-1);
+                color: var(--cinza-escuro-3);
+                transition: 1s all;
+            }
+        }
+    }
+
+    .projeto-acoes {
+        margin-top: 20px;
+
+        .projeto-github-link {
+            color: var(--branco-1);
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 20px;
+
+            &:hover {
+                background-color: var(--cinza-escuro-3);
+                transition: 1s all;
+            }
+        }
+    }
+}

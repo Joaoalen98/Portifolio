@@ -43,7 +43,6 @@
     }
 
     .skills {
-
         .skills-container {
             display: flex;
             justify-content: space-between;
@@ -88,26 +87,6 @@
         }
 
         .projetos-container {
-
-            .projeto {
-                border-radius: 20px;
-                background-color: var(--cinza-escuro-1);
-                margin-bottom: 10px;
-
-                .projeto-link {
-                    display: block;
-                    padding: 20px;
-                    color: var(--branco-1);
-                    text-decoration: none;
-                    border-radius: 20px;
-
-                    &:hover {
-                        background-color: var(--cinza-escuro-3);
-                        padding-left: 30px;
-                        transition:  1s all;
-                    }
-                }
-            }
         }
     }
 }
