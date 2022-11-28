@@ -1,14 +1,12 @@
 <article class="projeto">
-    <h3 class="projeto__titulo">{{ repositorio.name }}</h3>
-
-    <p class="projeto__descricao">{{ repositorio.description }}</p>
-
-    <div class="projeto__linguagem-container">
-        <p class="projeto__icone-linguagem">{{ repositorio.language }}</p>
+    <div class="projeto__texto-container">
+        <h3 class="projeto__titulo">{{ repositorio.name }}</h3>
+        <p class="projeto__descricao">{{ repositorio.description }}</p>
     </div>
 
-    <div class="projeto__acoes">
-        <a class="projeto__acoes-link" [href]="repositorio.html_url" target="_blank">
+    <div class="projeto__informacoes-container">
+        <p class="projeto__icone-linguagem">{{ repositorio.language }}</p>
+        <a class="projeto__github-link" [href]="repositorio.html_url" target="_blank">
             Ver no Github
         </a>
     </div>
