@@ -13,21 +13,19 @@
         padding: 20px 10px;
     }
 
-    .titulo-projeto {
-        margin-bottom: 20px;
+    .projeto__titulo {
+        margin-bottom: 10px;
     }
 
-    .projeto-descricao {
-        padding: 20px 10px;
+    .projeto__descricao {
+        padding: 10px 10px;
         background-color: var(--cinza-escuro-3);
         border-radius: 20px;
         margin-bottom: 10px;
     }
 
-    .projeto-linguagem-container {
-        padding: 10px 0;
-
-        .icone-linguagem {
+    .projeto__linguagem-container {
+        .projeto__icone-linguagem {
             display: inline;
             border: 1px solid var(--branco-1);
             padding: 10px;
@@ -43,10 +41,10 @@
         }
     }
 
-    .projeto-acoes {
+    .projeto__acoes {
         margin-top: 20px;
 
-        .projeto-github-link {
+        .projeto__acoes-link {
             color: var(--branco-1);
             text-decoration: none;
             padding: 10px;
