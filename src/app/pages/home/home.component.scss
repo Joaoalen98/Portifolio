@@ -1,3 +1,5 @@
+@import "../../../assets/scss/variaveis.scss";
+
 .home {
     padding: 40px 5%;
 
@@ -34,28 +36,27 @@
                     margin-top: 10px;
 
                     .sobre__item-contato-link {
-                        font-size: 35px;
+                        font-size: 1.25rem;
                         color: var(--branco-1);
                         margin-right: 15px;
-                    }
 
-                    .sobre__item-contato-link--linkedin {
-                        &:hover {
+                        &.sobre__item-contato-link--linkedin {
                             color: #0961b8;
                             transition: 1s all;
                         }
-                    }
 
-                    .sobre__item-contato-link--github {
-                        &:hover {
+                        &.sobre__item-contato-link--github {
                             color: #555;
                             transition: 1s all;
                         }
-                    }
 
-                    .sobre__item-contato-link--email {
-                        &:hover {
+                        &.sobre__item-contato-link--email {
                             color: #de3f32;
+                            transition: 1s all;
+                        }
+
+                        &:hover {
+                            border-bottom: 3px solid;
                             transition: 1s all;
                         }
                     }

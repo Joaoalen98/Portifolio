@@ -1,10 +1,12 @@
+@import "./assets/scss/variaveis.scss";
+
 :root {
-    --cinza-escuro-1: #161b22;
-    --cinza-escuro-2: #0d1117;
-    --cinza-escuro-3: #21262d;
-    --branco-1: #c9d1d9;
-    color: var(--branco-1);
-    font-size: 1rem;
+    // --cinza-escuro-1: #161b22;
+    // --cinza-escuro-2: #0d1117;
+    // --cinza-escuro-3: #21262d;
+    // --branco-1: #c9d1d9;
+    color: $branco-1;
+    font-size: 25px;
 }
 
 * {
@@ -17,17 +19,5 @@
 html,
 body {
     height: 100%;
-    background-color: var(--cinza-escuro-2);
-}
-
-@media (max-width: 720px) {
-    :root {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 520px) {
-    :root {
-        font-size: 0.7rem;
-    }
+    background-color: $cinza-escuro-2;
 }

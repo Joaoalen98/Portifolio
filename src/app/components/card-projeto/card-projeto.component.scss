@@ -1,14 +1,14 @@
+@import "../../../assets/scss/variaveis.scss";
+
 .projeto {
-    border-radius: 20px;
-    background-color: var(--cinza-escuro-1);
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    color: var(--branco-1);
+    color: $branco-1;
     text-decoration: none;
-    border-radius: 20px;
+    border-bottom: 1px solid $cinza-escuro-3;
 
     @media (max-width: 480px) {
         flex-direction: column;
@@ -40,29 +40,21 @@
 
         .projeto__icone-linguagem {
             display: inline;
-            border: 1px solid var(--branco-1);
+            border: 1px solid $branco-1;
             padding: 10px;
             border-radius: 20px;
-            font-size: 0.7rem;
-            cursor: pointer;
-
-            &:hover {
-                background-color: var(--branco-1);
-                color: var(--cinza-escuro-3);
-                transition: 1s all;
-            }
         }
 
         .projeto__github-link {
-            color: var(--branco-1);
+            color: $branco-1;
             text-decoration: none;
             padding: 10px;
             border-radius: 20px;
-            background-color: var(--cinza-escuro-2);
             margin-top: 10px;
 
             &:hover {
-                background-color: var(--cinza-escuro-3);
+                background-color: $branco-1;
+                color: $cinza-escuro-1;
                 transition: 1s all;
             }
 
