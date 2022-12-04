@@ -3,12 +3,15 @@
 .projeto {
     margin-bottom: 10px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 20px;
     color: $branco-1;
     text-decoration: none;
     border-bottom: 1px solid $cinza-escuro-3;
+
+    &:hover {
+        background-image: linear-gradient($cinza-escuro-2, $cinza-escuro-1);
+    }
 
     @media (max-width: 480px) {
         flex-direction: column;
@@ -27,16 +30,9 @@
     .projeto__informacoes-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
         min-width: 150px;
-
-        @media (max-width: 480px) {
-            width: 100%;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-        }
 
         .projeto__icone-linguagem {
             display: inline;
