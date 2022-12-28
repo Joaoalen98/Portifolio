@@ -66,13 +66,26 @@
 
         .skills__container {
             display: flex;
-            justify-content: space-around;
+            flex-wrap: wrap;
+            justify-content: space-between;
 
-            .skills__skill-imagem {
-                width: 80px;
+            .skill__card {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                padding: 20px;
 
-                @media (max-width: 600px) {
-                    width: 40px;
+                .skill__imagem {
+                    width: 100px;
+                }
+
+                .skill__lista {
+                    list-style-position: inside;
+                    padding-left: 10px;
+                }
+
+                @media (max-width: 550px) {
+                    width: 100%;
                 }
             }
         }
