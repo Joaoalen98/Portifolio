@@ -1,5 +1,5 @@
-<app-header></app-header>
-<main style="min-height: calc(100vh - 200px);">
-  <router-outlet></router-outlet>
+<app-header [valoresScroll]="valoresScroll"></app-header>
+<main style="min-height: calc(100vh - 200px); padding-top: 100px;">
+  <app-home (enviaPosicao)="teste($event)"></app-home>
 </main>
 <app-footer></app-footer>

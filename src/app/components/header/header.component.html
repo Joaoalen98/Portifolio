@@ -1,3 +1,26 @@
 <header class="header">
     <h1>Portifólio</h1>
+
+    <nav class="header__nav">
+        <ul class="header__ul">
+            <li>
+                <a (click)="scrolarPara($event, valoresScroll.scrollSobre)" class="ativo" href="#">
+                    <i class="fa-solid fa-house"></i>
+                    Início
+                </a>
+            </li>
+            <li>
+                <a (click)="scrolarPara($event, valoresScroll.scrollSkills)" href="#">
+                    <i class="fa-solid fa-code"></i>
+                    Skills
+                </a>
+            </li>
+            <li>
+                <a (click)="scrolarPara($event, valoresScroll.scrollProjetos)" href="#">
+                    <i class="fa-solid fa-list-check"></i>
+                    Projetos
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>

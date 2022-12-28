@@ -38,24 +38,10 @@
                         font-size: 1.25rem;
                         color: var(--branco-1);
                         margin-right: 15px;
-
-                        &.sobre__item-contato-link--linkedin {
-                            color: #0961b8;
-                            transition: 1s all;
-                        }
-
-                        &.sobre__item-contato-link--github {
-                            color: #555;
-                            transition: 1s all;
-                        }
-
-                        &.sobre__item-contato-link--email {
-                            color: #de3f32;
-                            transition: 1s all;
-                        }
+                        color: white;
 
                         &:hover {
-                            border-bottom: 3px solid;
+                            color: turquoise;
                             transition: 1s all;
                         }
                     }

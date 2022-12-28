@@ -1,6 +1,39 @@
 .header {
+    position: fixed;
+    width: 100vw;
     display: flex;
     align-items: center;
     height: 100px;
     padding: 0 5%;
+    justify-content: space-between;
+
+    .header__nav {
+        .header__ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+
+            li {
+                margin-left: 10px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    padding: 5px;
+
+                    &:hover {
+                        color: turquoise;
+                        border-bottom: 1px solid turquoise;
+                        transition: 1s all;
+                    }
+
+                    &.ativo {
+                        color: turquoise;
+                        border-bottom: 1px solid turquoise;
+                        transition: 1s all;
+                    }
+                }
+            }
+        }
+    }
 }
