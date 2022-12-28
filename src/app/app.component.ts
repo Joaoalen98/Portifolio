@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IValoresScroll } from './interfaces/ivalores-scroll';
+import { IElementosPagina } from './interfaces/ielementos-pagina';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +8,9 @@ import { IValoresScroll } from './interfaces/ivalores-scroll';
 })
 export class AppComponent {
 
-  valoresScroll!: IValoresScroll;
+  elementos!: IElementosPagina;
 
-  teste(valores: IValoresScroll) {
-    this.valoresScroll = valores;
+  teste(valores: IElementosPagina) {
+    this.elementos = valores;
   }
 } 

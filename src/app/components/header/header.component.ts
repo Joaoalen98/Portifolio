@@ -1,5 +1,5 @@
-import { Component, Input, OnInit, AfterContentChecked, ChangeDetectorRef, HostListener } from '@angular/core';
-import { IValoresScroll } from 'src/app/interfaces/ivalores-scroll';
+import { Component, Input, OnInit, HostListener } from '@angular/core';
+import { IElementosPagina } from 'src/app/interfaces/ielementos-pagina';
 
 @Component({
   selector: 'app-header',
@@ -8,11 +8,7 @@ import { IValoresScroll } from 'src/app/interfaces/ivalores-scroll';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() valoresScroll: IValoresScroll = {
-    scrollSobre: 0,
-    scrollSkills: 0,
-    scrollProjetos: 0
-  };
+  @Input() elementos!: IElementosPagina;
 
   constructor() { }
 
@@ -24,18 +20,32 @@ export class HeaderComponent implements OnInit {
   onWindowScroll() {
     let links = document.querySelectorAll(".header__ul li a");
 
-    if (window.scrollY >= this.valoresScroll.scrollSobre - 50 && window.scrollY < this.valoresScroll.scrollSkills - 50) {
+    let posicaoHome = this.elementos.home.offsetTop - 40;
+    let posicaoSobre = this.elementos.sobre.offsetTop - 40;
+    let posicaoSkills = this.elementos.skills.offsetTop - 40;
+    let posicaoProjetos = this.elementos.projetos.offsetTop - 40;
+
+    console.log({
+      posicaoHome,
+      posicaoSobre,
+      posicaoSkills,
+      posicaoProjetos,
+      window: window.scrollY,
+    });
+
+    if (window.scrollY >= posicaoSobre && window.scrollY < posicaoSkills) {
       links.forEach(link => link.classList.remove("ativo"));
       links[0].classList.add("ativo");
 
-    } else if (window.scrollY >= this.valoresScroll.scrollSkills - 50 && window.scrollY < this.valoresScroll.scrollProjetos - 50) {
+    } else if (window.scrollY >= posicaoSkills && window.scrollY < posicaoProjetos) {
       links.forEach(link => link.classList.remove("ativo"));
       links[1].classList.add("ativo");
 
-    } else if (window.scrollY >= this.valoresScroll.scrollProjetos - 50) {
+    } else if (window.scrollY >= posicaoProjetos) {
       links.forEach(link => link.classList.remove("ativo"));
       links[2].classList.add("ativo");
     }
+
   }
 
   scrolarPara(e: any, valor: number) {

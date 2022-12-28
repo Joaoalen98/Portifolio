@@ -1,48 +1,55 @@
 @import "../../../assets/scss/variaveis.scss";
 
 .home {
-    padding: 40px 5%;
+    padding: 0 5%;
 
     .sobre__titulo {
         text-align: center;
     }
 
-    .sobre__detalhes {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 40px 0 100px 0;
+    .sobre {
+        padding: 40px 0;
 
-        @media (max-width: 1221px) {
-            flex-direction: column;
+        .sobre__titulo {
+            margin-bottom: 20px;
         }
 
-        .sobre__imagem-perfil {
-            width: 200px;
-            border-radius: 50%;
+        .sobre__detalhes {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
 
             @media (max-width: 1221px) {
-                margin-bottom: 20px;
+                flex-direction: column;
             }
-        }
 
-        .sobre__descricao {
-            .sobre__lista {
-                list-style-position: inside;
+            .sobre__imagem-perfil {
+                width: 200px;
+                border-radius: 50%;
 
-                .sobre__item--contatos {
-                    list-style: none;
-                    margin-top: 10px;
+                @media (max-width: 1221px) {
+                    margin-bottom: 20px;
+                }
+            }
 
-                    .sobre__item-contato-link {
-                        font-size: 1.25rem;
-                        color: var(--branco-1);
-                        margin-right: 15px;
-                        color: white;
+            .sobre__descricao {
+                .sobre__lista {
+                    list-style-position: inside;
 
-                        &:hover {
-                            color: turquoise;
-                            transition: 1s all;
+                    .sobre__item--contatos {
+                        list-style: none;
+                        margin-top: 10px;
+
+                        .sobre__item-contato-link {
+                            font-size: 1.25rem;
+                            color: var(--branco-1);
+                            margin-right: 15px;
+                            color: white;
+
+                            &:hover {
+                                color: turquoise;
+                                transition: 1s all;
+                            }
                         }
                     }
                 }
@@ -51,10 +58,15 @@
     }
 
     .skills {
+        padding: 40px 0;
+
+        .skills__titulo {
+            margin-bottom: 20px;
+        }
+
         .skills__container {
             display: flex;
             justify-content: space-around;
-            padding: 40px 0;
 
             .skills__skill-imagem {
                 width: 80px;
