@@ -10,7 +10,7 @@
     border-bottom: 1px solid $cinza-escuro-3;
 
     &:hover {
-        background-image: linear-gradient($cinza-escuro-2, $cinza-escuro-1);
+        background-image: linear-gradient($cinza-escuro-2, rgba(64, 224, 208, 0.1));
     }
 
     @media (max-width: 480px) {
@@ -49,7 +49,7 @@
             margin-top: 10px;
 
             &:hover {
-                background-color: $branco-1;
+                background-color: turquoise;
                 color: $cinza-escuro-1;
                 transition: 1s all;
             }
